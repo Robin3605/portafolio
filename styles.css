@@ -252,7 +252,7 @@ article p {
     padding-top: .625rem;
     color: #fff;
 }
-.trabajos .nav {
+.trabajos .nav1 {
     text-align: center;
     margin: 20px;
 }
@@ -420,11 +420,12 @@ footer {
         clip-path: none;
     }
 } */
-@media screen and (max-width:770px){
+@media screen and (max-width:768px){
     .header{
         flex-direction: column;
-        width:100% ;
+        width:auto ;
     }
+    
     .section-header{
         margin-left: 0;
         padding-right: 0;
@@ -511,14 +512,15 @@ footer {
         flex-direction: row;
         margin-top: 0;
         padding-top: 0;
+        width: auto;
         height: 90vh;
     }
-    .contenedor-banner{
+    .contenedor-banner {
+        width: auto;
         margin-top: 0;
         padding-top: 0;
-        width: 300px;
     }
-    .contenedor-banner h2{
+    .contenedor-banner h2 {
         font-size: 26px;
         margin-bottom: 0;
         padding-bottom: 5px;
@@ -535,13 +537,19 @@ footer {
     .section1{
         align-items: center;
         justify-content: center;
+        margin: 0;
+        padding: 0;
+        padding: 5px;
+        
     }
     .cont-sect1{
-        margin-left: 0;
+        margin: 0;
+        padding: 5px;
         padding-left: 5px;
-        padding-left: 5px;
-        padding-right: 20px;
-        width: 330px;
+        padding-right: 5px;
+        width: 300px;
+        gap: 5px;
+        height: 65vh;
     }
     .cont-sect1 p{
         padding-left: 20px;
@@ -563,10 +571,13 @@ footer {
         
     }
     .chart{
-        padding-top: 0;
+        padding-top: 10px;
         padding-bottom: 0;
-        margin-top: 0;
+        margin-top: 10px;
         margin-bottom: 0;
+    }
+    .trabajos h2{
+        font-size: 30px;
     }
 
 
@@ -576,16 +587,26 @@ footer {
     .header{
         clip-path: none;
         flex-direction: column;
-        height: 100vh;
+        width: auto;
+        height: auto;
         margin-bottom: 20px;
     }
     .section-header{
         flex-direction: column;
-        height: 100vh;
+        height: auto;
+    }
+    .section-header .logo{
+        margin: 0;
+        padding: 0;
+    }
+    .section-header .logo h1{
+        margin: 0;
+        padding: 0;
     }
     .banner{
         flex-direction: column;
-        height: 100vh;
+        width: auto;
+        height: auto;
     }
     .section1{
         grid-template-columns: 1fr;
@@ -597,48 +618,75 @@ footer {
         width: 200px;
         height: 23vh;
     }
+    .section1{
+        margin-bottom: 5px;
+    }
     .cont-sect1{
         width: 250px;
+        height: 70vh;
     }
     .section2{
         grid-template-columns: 1fr;
-        height: 260vh;
-        width: 250px;
+        height: auto;
+        width: auto;
         align-self: center;
         justify-self: center;
         align-items: center;
-        margin-left: 60px;
+        margin: 10px;
     }
     .habilidades{
         grid-template-columns: 1fr;
-        height: 100vh;
+        width: auto;
+        height: auto;
         align-self: center;
         justify-self: center;
     }
-    .trabajos{
+    .trabajo{
         margin: 0;
         padding: 0;
+        width: auto;
+        height: auto;
+        
     }
-    .trabajos h2{
-        font-size: 30px;
+    .trabajo h2{
+        font-size: 27px;
     }
-    .trabajos .nav1{
-        display: none;
-    }
-    .trabajos .galeria{
-        width: 320px;
-        margin-left: 25px;
+    .trabajo .nav1 a{
+        width: 100px;
         padding: 0;
-        padding-left: 5px;
-        align-items: center;
-        justify-content: center;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+        
     }
-    .trabajos .galeria .fotos img{
-        width: 300px;
-        padding-left: 15px;
-        margin: 0;
-        justify-content: center;
-        align-items: center;
+    .trabajos .galeria .item .info{
+        width: 340px;
+        height: auto;
+    }
+    .trabajos .galeria .item .info h3{
+        font-size: 20px;
+        margin: 5px;
+        padding: 5px;
+    }
+    .trabajos .galeria .item .info span{
+        margin: 5px;
+        padding: 5px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .trabajo .galeria{
+        width: auto;
+        margin: 5px;
+        padding: 5px;
+        align-self: center;
+        justify-self: center;
+    }
+    .trabajo .galeria .fotos img{
+        width: 330px;
+        padding: 0;
+        margin: 5px;
+        align-self: center;
+        justify-self: center;
     }
     .contacto{
         width: 320px;
@@ -649,10 +697,120 @@ footer {
         grid-template-columns: 1fr;
     }
     footer{
-        width: 260px;
+        width: auto;
         text-align: center;
         align-items: center;
         justify-content: center;
+    }
+    footer p {
+        text-align: center;
+    }
+
+} 
+
+@media screen and (max-width:320px){
+    .header{
+        clip-path: none;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .section-header{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    .section-header .logo{
+        margin: 0;
+        padding: 0;
+    }
+    .section-header .logo h1{
+        margin: 0;
+        padding: 0;
+    }
+    .banner{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .section1{
+        grid-template-columns: 1fr;
+        align-self: center;
+        justify-self: center;
+        margin-top: 20px;
+    }
+    .contenedor-img img{
+        width: 200px;
+        height: 23vh;
+    }
+    .section1{
+        margin-bottom: 5px;
+    }
+    .cont-sect1{
+        width: 250px;
+        height: 70vh;
+    }
+    .section2{
+        grid-template-columns: 1fr;
+        height: auto;
+        width: auto;
+        align-self: center;
+        justify-self: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .habilidades{
+        grid-template-columns: 1fr;
+        width: auto;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+    }
+    .trabajo{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        
+    }
+    .trabajo h2{
+        font-size: 27px;
+    }
+    .trabajo .galeria{
+        width: auto;
+        margin: 0px;
+        padding: 5px;
+        align-self: center;
+        justify-self: center;
+    }
+    .trabajo .galeria .fotos img{
+        width: 280px;
+        padding: 0;
+        margin: 5px;
+        align-self: center;
+        justify-self: center;
+    }
+    .trabajos .galeria .item .info{
+        width: 290px;
+        height: auto;
+    }
+    .contactos{
+        width: 280px;
+        margin-top: 20px;
+    }
+    .fila{
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+    footer{
+        width: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    footer p {
+        text-align: center;
     }
 
 } 
