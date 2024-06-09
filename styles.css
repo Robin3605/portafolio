@@ -623,7 +623,10 @@ footer {
     }
     .cont-sect1{
         width: 250px;
-        height: 70vh;
+        height: 55vh;
+    }
+    .cont-sect1 p{
+        font-size: 15px;
     }
     .section2{
         grid-template-columns: 1fr;
